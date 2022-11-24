@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paragraph</title>
+   
+</head>
+<body>
+    <div class="wrapper">
+        <div class="boxes">
+            <input type= "radio" value="1" name="r">1
+            <input type="radio" value="4" name="r">4 
+            <input type="radio" value="6" name="r">6
+            <input type="radio" value="10"name="r">10
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quis nihil temporibus sequi, atque quasi accusantium dignissimos sint iste, officiis veniam? Tempore nostrum temporibus vitae, sint officia deserunt distinctio vero?</p>
+        <p>Dicta earum ipsa nulla cum voluptas incidunt, reprehenderit autem vel nihil sunt qui distinctio quibusdam accusantium delectus deleniti quisquam a ex odit quos itaque quam voluptate similique tempora? Qui, voluptate.</p>
+        <p>Cum, possimus perspiciatis accusantium cupiditate corporis quos adipisci. Rem numquam ad hic praesentium non porro dolorum, labore veritatis doloremque eligendi alias magnam illo sapiente consectetur facilis harum perferendis unde quidem.</p>
+        <p>Debitis in eum quis incidunt deserunt quibusdam qui! Accusamus voluptatum error corrupti, quas, voluptatibus maiores sapiente fuga repellat id nostrum non eum porro iste asperiores provident ipsa placeat laborum dolorem!</p>
+        <p>Distinctio id eveniet saepe earum at voluptate officiis quisquam, nostrum autem est. Asperiores architecto, earum sit minima ea vitae temporibus a laboriosam cupiditate quis cumque corrupti? Quis nemo non tempora.</p>
+        <p>Inventore sint iste rerum illum deserunt reiciendis est perspiciatis adipisci, omnis, autem itaque aspernatur fugit modi cum hic quis nobis beatae atque quia nihil dolores saepe! Ea repellendus debitis quasi!</p>
+        <p>In, eveniet accusamus. Suscipit quas a numquam dolore aperiam ut quaerat optio quia illum facere corrupti molestiae soluta, velit excepturi? Expedita consectetur obcaecati veniam culpa, repellendus pariatur excepturi maxime reiciendis.</p>
+        <p>Ex, amet veritatis nesciunt ea accusantium, reprehenderit odit laborum non obcaecati asperiores doloribus. Suscipit ad temporibus perferendis eius recusandae nam eaque voluptates? Magni corrupti nisi consectetur, molestias animi reprehenderit quidem.</p>
+        <p>Saepe dolor distinctio omnis obcaecati laboriosam similique sit recusandae officiis possimus eos! Velit inventore labore vitae commodi accusantium quam quia hic obcaecati error natus, cupiditate magnam adipisci, distinctio saepe fuga.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, et temporibus. Illo quidem esse quibusdam? Voluptatibus, nobis, neque eligendi dolorum velit, hic veritatis ex explicabo totam ipsam pariatur iure quasi.</p>
+    </div>
+    
+
+    <script>
+        let input = document.querySelectorAll("input")
+        let para = document.querySelectorAll("p")
+
+        for( let i=0;i<input.length;i++){
+            input[i].onclick=()=>{
+                console.log(input)
+                let paragraph = input[i].value;
+                for (let k=0;k<para.length;k++){
+                    para[k].style.color = "000"
+                }
+
+            for(let j=0;j<paragraph;j++){
+                para[j].style.color = "Red"
+            }
+
+            }
+        }
+    </script>
+</body>
+</html>
